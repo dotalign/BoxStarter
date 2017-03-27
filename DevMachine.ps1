@@ -32,7 +32,6 @@ cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y binroot
 cinst -y winmerge
-cinst -y dropbox
 cinst -y git
 cinst -y SourceTree
 cinst -y GnuWin
