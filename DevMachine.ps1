@@ -20,40 +20,55 @@ Update-ExecutionPolicy Unrestricted
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -acceptEula -getUpdatesFromMS
 
-# Must Have Toys
-cinst -y GoogleChrome
-cinst -y KickAssVim
-cinst -y greenshot # Keep this before Dropbox to make sure we get the print screen hooks registered
-cinst -y keepass
-cinst -y cmder.portable
+# First things first
+#-- For various reasons, it's better to install certain things first
+cinst -y greenshot       # Let's let this guy grab some key bindings before someone else steals them (I'm looking at you Dropbox)
+cinst -y GoogleChrome    # Let's get you a browser
 
-# Less Important Toys
+# Officey Things
 cinst -y 7zip.install
-cinst -y sysinternals
-cinst -y binroot
 cinst -y winmerge
-cinst -y git
-cinst -y SourceTree
-cinst -y GnuWin
 cinst -y paint.net
-cinst -y fiddler4
 cinst -y slack
 cinst -y WinDirStat
+cinst -y vcredist2010
+cinst -y keepass
+
+# Git
+cinst -y git
+cinst -y smartgit
+cinst -y gitkraken
+cinst -y SourceTree
+
+# Text Editors
+cinst -y KickAssVim
+cinst -y notepadplusplus.install
+cinst -y notepad2
+
+# Dev Tools
+# -- Useful for us/.Net in general
+cinst -y wixtoolset
+cinst -y ilspy
+cinst -y mfcmapi
+cinst -y NuGet.CommandLine
+cinst -y debugdiagnostic
+cinst -y nunit.install
+
+# -- General dev tools
+cinst -y cmder.portable
+cinst -y sysinternals
+cinst -y binroot
+cinst -y GnuWin
+cinst -y fiddler4
 cinst -y nodejs.install
 cinst -y npm
 cinst -y mongodb
-
-cinst -y NuGet.CommandLine
-cinst -y debugdiagnostic
-cinst -y ilspy
-cinst -y mfcmapi
-cinst -y nunit.install
 cinst -y putty.portable
 cinst -y SQLite
 cinst -y sqlitebrowser
-cinst -y vcredist2010
-cinst -y wixtoolset
-
-# Tools Josh Wrote
 cinst -y ColorCat.portable
 cinst -y LogStitcher.portable
+
+# Big things go last
+# -- For various reasons, it's better to install certain things last
+cinst -y office365proplus   # this guy is just big, so he can go last
