@@ -1,4 +1,4 @@
-# To Run From Web:  http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/jquintus/QuintusInstall/master/BoxStarter-Work.ps1
+# To Run From Web:  http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/dotalign/BoxStarter/master/DevMachine.ps1
 
 #### Boxstarter options
 $Boxstarter.NoPassword=$false # Is this a machine with no login password?
