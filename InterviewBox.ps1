@@ -10,3 +10,5 @@ Write-Output "Setting computer name to $computerName"
 Rename-Computer $computerName
 
 choco install -y eclipse
+choco install -y chrome
+choco install -y notepadplusplus.install
