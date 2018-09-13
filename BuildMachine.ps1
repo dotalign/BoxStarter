@@ -4,7 +4,4 @@
 # Visual Studio 2017 
 # Box https://www.box.com/resources/downloads
 
-cinst -y KickAssVim
-cinst -y notepadplusplus.install
-# cinst -y wixtoolset
 cinst -y nuget.commandline
