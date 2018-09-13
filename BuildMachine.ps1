@@ -6,5 +6,5 @@
 
 cinst -y KickAssVim
 cinst -y notepadplusplus.install
-cinst -y wixtoolset
+# cinst -y wixtoolset
 cinst -y nuget.commandline
